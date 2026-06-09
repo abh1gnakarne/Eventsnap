@@ -1,0 +1,11 @@
+node_modules/
+*.db
+*.db-shm
+*.db-wal
+backend/uploads/media/*
+!backend/uploads/media/.gitkeep
+backend/uploads/temp/*
+!backend/uploads/temp/.gitkeep
+.env
+build/
+.DS_Store
