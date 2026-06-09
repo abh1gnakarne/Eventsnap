@@ -11,7 +11,9 @@ const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: '*', methods: ['GET','POST'] } });
 const JWT_SECRET = process.env.JWT_SECRET || 'eventsnap_secret_2024';
 
-app.use(cors());
+app.use(cors({ 
+  origin: 'https://your-frontend-app.vercel.app' 
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
