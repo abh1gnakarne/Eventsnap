@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: '/api' });
+const API = axios.create({ 
+  baseURL: 'https://eventsnap-backend-4yv7.onrender.com/api' 
+});
 
 API.interceptors.request.use(cfg => {
   const token = localStorage.getItem('token');
