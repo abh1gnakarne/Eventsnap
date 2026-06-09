@@ -111,7 +111,7 @@ export default function Home() {
             <Link to="/events" className="btn btn-secondary btn-sm">View all →</Link>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 20 }}>
-            {events.map(ev => (
+            {events?.map(ev => (
               <EventCard key={ev.id} event={ev} />
             ))}
           </div>
